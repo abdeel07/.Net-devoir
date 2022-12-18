@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Devoir .Net</h1>
+    <p class="lead">Store</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Register</h2>
+        <p>
+            @Html.ActionLink("Register here", "Create", "User")
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Login</h2>
+        <p>
+            @Html.ActionLink("Login here", "Login")
+        </p>
+    </div>
+</div>
