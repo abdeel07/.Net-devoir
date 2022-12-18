@@ -60,6 +60,15 @@ namespace Devoir.Controllers
                     MessageBox.Show("Not found !");
             }
 
+            for (int i = 0; i < ProductList.products.Count; i++)
+            {
+                if (ProductList.products[i].ID == id)
+                {
+
+                    return View(ProductList.products[i]);
+                }
+            }
+
             return View();
         }
 
